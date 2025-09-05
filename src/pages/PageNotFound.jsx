@@ -3,8 +3,7 @@ import PageNav from '../components/PageNav';
 function PageNotFound() {
   return (
     <div>
-      <PageNav />
-      <h2> Not Found:❗</h2>
+      <h1>Page not found 😢</h1>
     </div>
   );
 }
