@@ -10,13 +10,13 @@ import { useEffect, useState } from 'react';
 const URL = 'http://localhost:3000/cities';
 
 function App() {
-  const [cities, setCities] = useState({});
+  const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   useEffect(function () {
     async function fetchCities() {
       try {
         setIsLoading(true);
-        const res = await fetch(`${URL}/cities`);
+        const res = await fetch(URL);
 
         const data = await res.json();
         setCities(data);
